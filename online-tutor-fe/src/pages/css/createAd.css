@@ -1,0 +1,184 @@
+.form-holder{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    /* border: 2px solid black; */
+}
+
+.loc{
+    width: 30% !important;
+    display: inline-block;
+}
+
+.price{
+    display: inline-block;
+    width: 30% !important;
+    margin-right: 5rem;
+    margin-left: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+
+.edit-window{
+    position: absolute;
+    z-index: 5;
+    top: 2rem;
+    background-color: rgba(150, 150, 150, 1);
+    max-width: 100%;
+    border: none;
+    margin: 5rem 5rem 5rem 25rem;
+    /* width: 90%; */
+    height: max-content;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.close-details{
+    position: absolute;
+    border-radius: 50rem;
+    border: none;
+    margin: 0.25rem;
+    right: 0.25rem;
+    top: 0.25rem;
+    padding: 0;
+}
+
+.edit-btn{
+    position: absolute;
+    /* border-radius: 20rem; */
+    /* border: none; */
+    padding: 0;
+    margin: 0.25rem;
+    right: 0;
+}
+
+.student-v-btn{
+    position: absolute;
+    /* border-radius: 20rem; */
+    /* border: none; */
+    padding: 0;
+    margin: 0.25rem;
+    left: 42%;
+}
+
+.delete-btn{
+    position: absolute;
+    padding: 0;
+    margin: 0.25rem;
+    left: 0;
+}
+
+.detail-encap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-content: center;
+    align-items: center; */
+}
+
+.image-holder{
+    margin: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.card-siri{
+    font-weight:bolder;
+    font-size: 1.2rem;
+    border-width: 2px;   
+     
+}
+
+
+
+.show-shadow{
+    -webkit-box-shadow: -19px 16px 22px 0px rgba(145,140,145,1);
+    -moz-box-shadow: -19px 16px 22px 0px rgba(145,140,145,1);
+    box-shadow: -19px 16px 22px 0px rgba(145,140,145,1);
+}
+
+.top-less{
+    border-top-style: hidden !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.heading{
+    
+    font-family: "Quicksand", sans-serif;
+    font-weight:bold;
+}
+
+.card-content-siri{
+    font-family: 'Aldrich', sans-serif !important;
+}
+
+.card-title-siri{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.card-body-siri{
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    margin: 1rem !important;
+    border-radius: 1rem;
+    height: max-content;
+}
+.flx{
+    display: flex;
+}
+
+.card-holder-siri{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.card-holder-siri-v2{
+
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 5%; */
+
+    display: flex;
+    place-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    
+    border: 5px solid black;
+    /* height: fit-content; */
+    
+    /* justify-items: center; */
+    margin-top: 2rem;
+    min-height: 0;
+    /* width: 100%; */
+}
+
+.profile-style-siri-search{
+    background-color: rgba(50,50,50,0) !important;
+    transition: all linear 0.3s;
+    margin-bottom: 5rem;
+}
+
+.card-sz-siri{
+    width: fit-content;
+}
+.profile-style-siri-search:hover{
+    border-style: solid;
+    border-radius: 2px;
+    scale: 1.07;
+}

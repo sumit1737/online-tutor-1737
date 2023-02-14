@@ -1,0 +1,9 @@
+.org-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.inf-block{
+    width: 70%;
+    margin-right: 10rem;
+}

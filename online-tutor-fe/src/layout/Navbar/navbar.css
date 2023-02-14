@@ -1,0 +1,68 @@
+.link-siri{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;filter: blur(0px) !important;
+}
+
+.link-siri:hover{
+    color: rgb(147, 147, 147);
+    filter: blur(0px) !important;
+    /* font-weight: bold; */
+}
+
+.logo-siri{
+    height: 3.5rem;
+    width: 3.5rem;
+    transition: all linear 0.3s;
+    scale: 1.2;
+}
+
+.logo-siri:hover{
+    scale: 1.4;
+}
+
+.navbar-holder-siri{
+    /* box-shadow: 5px 10px 8px red; */
+    border-radius: 1rem;
+    height: fit-content;
+    font-family: 'Orbitron', sans-serif;
+    font-weight:bold;
+    /* filter: blur(4px); */
+}
+
+
+.navbar-siri{
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    border-radius: 1rem;
+    background-color: rgba(100, 100, 100, 0.1) !important;
+    top: 0.5rem !important;
+    left: 1rem !important;
+    right: 1rem !important;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+
+
+.spacer-siri{
+    height: 4.3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+
+.navbar-brand-siri{
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+}
+/* .nav-item-siri{
+    transition: all linear 0.3s;
+}
+.nav-item-siri:hover{
+    scale: 1.1;    
+} */
+
+
+

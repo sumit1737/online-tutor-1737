@@ -1,0 +1,51 @@
+.active{
+    border-width: 2px !important;
+}
+.accept-btn{
+    position: absolute;
+    /* border-radius: 20rem; */
+    /* border: none; */
+    padding: 0;
+    margin: 0.25rem;
+    right: 0;
+}
+
+.student-info-btn{
+    position: absolute;
+    /* border-radius: 20rem; */
+    /* border: none; */
+    padding: 0;
+    margin: 0.25rem;
+    left: 42%;
+}
+
+.reject-btn{
+    position: absolute;
+    padding: 0;
+    margin: 0.25rem;
+    left: 0;
+}
+
+.inf-t{
+    position: absolute;
+    /* border-radius: 20rem; */
+    /* border: none; */
+    padding: 0;
+    margin: 0.25rem;
+    right: 0;
+}
+
+.close-details-t{
+    position: absolute;
+    border-radius: 20rem;
+    border: none;
+    top: 0;
+    padding: 0;
+    margin: 0.25rem;
+    right: 0;
+}
+
+.rate-field-siri{
+    width: 20%;
+    margin-top: 1rem;
+}

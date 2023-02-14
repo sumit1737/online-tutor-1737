@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+.card-siri{
+    font-weight:bolder;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0) !important;
+    border-color: rgba(255, 255, 255, 0) !important;
+}
+
+.heading{
+    /* font-family: 'Russo One', sans-serif; */
+    font-family: 'Orbitron', sans-serif;
+    font-weight:bold;
+}
+
+.card-content-siri{
+    font-family: 'Aldrich', sans-serif !important;
+}
+
+.card-title-siri{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.card-body-siri{
+    /* color: rgb(0,255,0) !important; */
+    color: rgb(210,210,210) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0) !important;
+    margin: 1rem !important;
+    border-radius: 1rem;
+
+}
+
+.card-holder-siri{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.profile-style-siri{
+    background-color: rgba(50,50,50,0.5) !important;
+    transition: all linear 0.3s;
+}
+
+.profile-style-siri:hover{
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 2px;
+    scale: 1.07;
+}
