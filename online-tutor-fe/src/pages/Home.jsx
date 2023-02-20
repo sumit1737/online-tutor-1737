@@ -16,7 +16,7 @@ function Home(props){
     const [order, setOrder] = useState("");
 
     const fillData = async () => {
-        axios.get("http://127.0.0.1:6969/advert/getallads").then((response)=>{
+        axios.get(process.env.REACT_APP_API+"/advert/getallads").then((response)=>{
             setSearchRes(response.data);
         });
     }

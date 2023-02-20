@@ -23,7 +23,7 @@ function Notebook(props){
 
     // handling and showing requests
     function fillRequest(){
-        axios.get("http://127.0.0.1:6969/data/getmyrequests").then((response)=>{
+        axios.get(process.env.REACT_APP_API+"/data/getmyrequests").then((response)=>{
             console.log(response.data);
             setRequests(response.data);
         }).catch((error)=>{
@@ -41,7 +41,7 @@ function Notebook(props){
                                 <Crd.Img variant="top" src={request.senderInfo.img} />
                                 <button className="reject-btn btn btn-outline-danger"
                                     onClick={()=>{
-                                        axios.delete(`http://127.0.0.1:6969/request/deletereq/${request.reqInfo._id}`).then((repsonse)=>{
+                                        axios.delete(`${process.env.REACT_APP_API}/request/deletereq/${request.reqInfo._id}`).then((repsonse)=>{
                                             fillRequest();
                                         }).catch((error)=>{
                                             window.alert(error.response.data.errorMessage);
@@ -58,7 +58,7 @@ function Notebook(props){
                                 
                                 <button className="accept-btn btn btn-outline-success"
                                     onClick={(e)=>{
-                                        axios.post("http://127.0.0.1:6969/request/approved",{
+                                        axios.post(process.env.REACT_APP_API+"/request/approved",{
                                             reqId: request.reqInfo._id
                                         }).then((response)=>{
                                             console.log(response);
@@ -102,7 +102,7 @@ function Notebook(props){
 
     //handling and showing teachers
     function fillTeachers(){
-        axios.get("http://127.0.0.1:6969/data/getmyteachers").then((response)=>{
+        axios.get(process.env.REACT_APP_API+"/data/getmyteachers").then((response)=>{
             console.log(response.data);
             setTeachers(response.data);
         }).catch((error)=>{
@@ -144,7 +144,7 @@ function Notebook(props){
                                         <option value="5">5</option>
                                     </Form.Select>
                                     <Button variant="outline-primary" id="button-addon2" onClick={(e)=>{
-                                        axios.post("http://127.0.0.1:6969/entry/giverating",{
+                                        axios.post(process.env.REACT_APP_API+"/entry/giverating",{
                                             rating: rating,
                                             tid: focusedTeacher.teacherDetails._id
                                         }).then((response)=>{
@@ -221,7 +221,7 @@ function Notebook(props){
 
     //handling and showing students
     function fillStudents(){
-        axios.get("http://127.0.0.1:6969/data/getmystudents").then((response)=>{
+        axios.get(process.env.REACT_APP_API+"/data/getmystudents").then((response)=>{
             console.log(response.data);
             setStudents(response.data);
         }).catch((error)=>{

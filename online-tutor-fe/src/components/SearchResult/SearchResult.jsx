@@ -18,7 +18,7 @@ function SearchResult(props){
 
     
     function fillSent(){
-        axios.get("http://127.0.0.1:6969/data/getmyreq").then((response)=>{
+        axios.get(process.env.REACT_APP_API+"/data/getmyreq").then((response)=>{
             setSent(response.data);
         }).catch((error)=>{
         })
@@ -30,7 +30,7 @@ function SearchResult(props){
 
     function getDetailedInfo(ad){
         setFocusedAd(ad);
-        axios.get(`http://127.0.0.1:6969/data/getuserinfo/${ad.tid}`).then((response)=>{
+        axios.get(`${process.env.REACT_APP_API}/data/getuserinfo/${ad.tid}`).then((response)=>{
             setDetailedView(true);
             setDetailTeacher(response.data);
             console.log(response);
@@ -100,7 +100,7 @@ function SearchResult(props){
     }
 
     function sendRequest(ad){
-        axios.post("http://127.0.0.1:6969/request/approval",{
+        axios.post(process.env.REACT_APP_API+"/request/approval",{
             to:ad.tid,
             adi:ad._id
         }).then((response)=>{

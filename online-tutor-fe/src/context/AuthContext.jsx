@@ -18,7 +18,7 @@ function AuthContextProvider(props){
     const [currentUser, setCurrentUser] = useState("");
 
     async function getLoggedIn(){
-        const loggedInRes = await axios.get("http://127.0.0.1:6969/entry/loggedin");
+        const loggedInRes = await axios.get(process.env.REACT_APP_API+"/entry/loggedin");
         setLoggedIn(loggedInRes.data.isLoggedIn);
         setCurrentUser(loggedInRes.data.userInfo);
         console.log("Auth",loggedInRes.data);

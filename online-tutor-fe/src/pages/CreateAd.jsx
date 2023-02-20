@@ -15,7 +15,7 @@ function CreateAd(props){
 
     function handleSubmit(e){
         e.preventDefault();
-        axios.post("http://127.0.0.1:6969/advert/createnewad",{
+        axios.post(process.env.REACT_APP_API+"/advert/createnewad",{
             subject: subject,
             mode: mode,
             price: price,

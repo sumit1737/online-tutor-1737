@@ -29,7 +29,7 @@ function Register(){
             img: profileImg,
             about: about
         }
-        let response = await axios.post("http://127.0.0.1:6969/entry/register",cred,{
+        let response = await axios.post(process.env.REACT_APP_API+"/entry/register",cred,{
             withCredentials: true
         }).catch((error)=>{
             console.log("hello",error.response.status);

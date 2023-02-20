@@ -24,7 +24,7 @@ function Myads(){
     const navigate = useNavigate();
 
     async function fillData(){
-        axios.get("http://127.0.0.1:6969/advert/getmyads").then((response)=>{
+        axios.get(process.env.REACT_APP_API+"/advert/getmyads").then((response)=>{
             setSearchRes(response.data);
         }).catch((error)=>{
             console.log(error);
@@ -37,7 +37,7 @@ function Myads(){
 
     function getDetailedInfo(ad){
         setFocusedAd(ad);
-        axios.get(`http://127.0.0.1:6969/data/getuserinfo/${ad.tid}`).then((response)=>{
+        axios.get(`${process.env.REACT_APP_API}/data/getuserinfo/${ad.tid}`).then((response)=>{
             setDetailedView(true);
             setDetailTeacher(response.data);
             console.log(response);
@@ -48,7 +48,7 @@ function Myads(){
 
     function handleSubmit(e){
         e.preventDefault();
-        axios.post("http://127.0.0.1:6969/advert/editmyad",{
+        axios.post(process.env.REACT_APP_API+"/advert/editmyad",{
             subject: subject,
             mode: mode,
             price: price,
@@ -171,7 +171,7 @@ function Myads(){
 
     function deleteAd(id){
         if(window.confirm('Are you sure you want to delete this ad?')){
-            axios.delete(`http://127.0.0.1:6969/advert/deletead/${id}`).then((respone)=>{
+            axios.delete(`${process.env.REACT_APP_API}/advert/deletead/${id}`).then((respone)=>{
                 console.log(respone);
                 fillData();
             }).catch((error)=>{

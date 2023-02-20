@@ -9,7 +9,7 @@ export default function Logout() {
     const navigate = useNavigate();
 
     async function logout(){
-        await axios.get("http://127.0.0.1:6969/entry/logout");
+        await axios.get(process.env.REACT_APP_API+"/entry/logout");
         await getLoggedIn();
         navigate("/");
     }

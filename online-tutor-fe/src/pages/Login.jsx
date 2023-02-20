@@ -19,7 +19,7 @@ function Login(){
             email: email,
             password: password
         }
-        let response = await axios.post("http://127.0.0.1:6969/entry/login",cred,{
+        let response = await axios.post(process.env.REACT_APP_API+"/entry/login",cred,{
             withCredentials: true
         }).catch((error)=>{
             console.log("hello",error.response.status);

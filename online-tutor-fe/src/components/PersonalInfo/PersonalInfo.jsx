@@ -23,7 +23,7 @@ function PersonalInfo(props){
     const [canEdit, setCanEdit] = useState(false); // to edit personal info by making the form editable
 
     async function fillData(){
-        axios.get("http://127.0.0.1:6969/data/getmyinfo").then((response)=>{
+        axios.get(process.env.REACT_APP_API+"/data/getmyinfo").then((response)=>{
             // console.log(response.data);
             setUserObj(response.data);
             setName(response.data.name);
@@ -53,7 +53,7 @@ function PersonalInfo(props){
             about: about,
             contact:contact
         }
-        let response = await axios.post("http://127.0.0.1:6969/entry/updateself",cred,{
+        let response = await axios.post(process.env.REACT_APP_API+"/entry/updateself",cred,{
             withCredentials: true
         });
         console.log("done");
